@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c88ba945b.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Maria Amanda dos Santos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../MA.jpg" width=15% alt="Logo Maria Amanda">
+        </div>
+        <ul>
+            <li><a target="_blank" href="https://github.com/MARIA-AMANDA">GitHub</a></li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/mariaamandasantos/">Linkedin</a>
+            </li>
+            <li><a target="_blank" href="mailto:santosamandamaria@gmail.com">Email</a></li>
+            <li><a target="_blank" href="https://wa.me/5513997865492">Whatsapp</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Maria Amanda S. dos Santos</h1>
+                <h5>Estudante de Engenharia de Produção</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-chevron-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                    <p> Formação: </p>
+                    <p> - Graduação em Engenharia de Produção - Universidade Santa Cecilia (2019-2024)  </p>
+                    <p> - Técnico em Administração - E. M. 1º de Maio (2016-2018) </p>
+                    <p> - Técnico em Losgística - Colégio Adélia Camargo Corrêa (2019-2019) </p>
+               
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                    </div>
+                <form actions="">
+                    <input type="text" placeholder="Seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+        </script>
+</body>
+</html>
